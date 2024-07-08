@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/guide.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/card.css" />
+		<link rel="stylesheet" href="./css/form.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="./img/Logo.svg" alt="logo" />
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="productos" id="productos">
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://assets2.razerzone.com/images/pnx.assets/9fd641835510958a2951b1e004bedec3/500x500-razer-viper-mini-signature-edition.webp"
+							alt="Imagen Producto"
+						/>
+					</div>
+					<div class="card__name">Razer Viper</div>
+					<div class="card__wrapper">
+						<div class="card__price">$5000</div>
+						<div class="card__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								style="
+									fill: rgb(0, 0, 0);
+									--darkreader-inline-fill: #e8e6e3;
+								"
+								data-darkreader-inline-fill=""
+							>
+								<path
+									d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"
+								></path>
+								<path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://gamerunlocked.pt/wp-content/uploads/2023/11/Thorn-B03.png"
+							alt="Imagen Producto"
+						/>
+					</div>
+					<div class="card__name">Lamzu Thorn</div>
+					<div class="card__wrapper">
+						<div class="card__price">$5000</div>
+						<div class="card__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								style="
+									fill: rgb(0, 0, 0);
+									--darkreader-inline-fill: #e8e6e3;
+								"
+								data-darkreader-inline-fill=""
+							>
+								<path
+									d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"
+								></path>
+								<path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://ninjutso.com/cdn/shop/files/1_fc47a72a-d895-4be4-a133-264f52dfeb98.jpg?v=1717589054"
+							alt="Imagen Producto"
+						/>
+					</div>
+					<div class="card__name">Ninjutso Sora V2</div>
+					<div class="card__wrapper">
+						<div class="card__price">$4000</div>
+						<div class="card__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								style="
+									fill: rgb(0, 0, 0);
+									--darkreader-inline-fill: #e8e6e3;
+								"
+								data-darkreader-inline-fill=""
+							>
+								<path
+									d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"
+								></path>
+								<path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<aside class="aside">
+				<div class="form-container">
+					<form class="form" id="productForm">
+						<span class="heading">Agregar Producto</span>
+						<input
+							placeholder="Nombre"
+							type="text"
+							class="input"
+							id="nombre"
+							required
+						/>
+						<input
+							placeholder="Precio"
+							id="precio"
+							type="text"
+							class="input"
+							required
+						/>
+						<textarea
+							placeholder="Url Imagen"
+							rows="1"
+							cols="30"
+							id="url"
+							name="message"
+							class="textarea"
+							required
+						></textarea>
+
+						<div class="button-container">
+							<input
+								type="submit"
+								class="submit-button"
+								value="Enviar"
+								id="enviar"
+							/>
+							<a class="reset-button-container">
+								<div id="reset-btn" class="reset-button">
+									Limpiar
+								</div>
+							</a>
+						</div>
+					</form>
+				</div>
+			</aside>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="./img/Logo.svg" alt="logo" />
+				</div>
+				<div class="footer__text">
+					<p>©Code by Leandro Vargas</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>
