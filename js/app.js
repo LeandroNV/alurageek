@@ -3,17 +3,17 @@ document
 	.addEventListener("submit", function (event) {
 		event.preventDefault(); // Evita el envío del formulario para poder capturar los datos
 
-		// Captura los valores de los campos
+		
 		const nombre = document.getElementById("nombre").value;
 		const precio = document.getElementById("precio").value;
 		const url = document.getElementById("url").value;
 
-		// Almacena los valores en variables string
+		
 		let nombreStr = nombre;
 		let precioStr = precio;
 		let urlStr = url;
 
-		// Crea el HTML para el nuevo producto
+		
 		const nuevoProducto = document.createElement("div");
 		nuevoProducto.classList.add("card");
 		nuevoProducto.innerHTML = `
@@ -32,21 +32,21 @@ document
                 </div>
             `;
 
-		// Añade un event listener al icono para eliminar la tarjeta
+		
 		nuevoProducto
 			.querySelector(".card__icon")
 			.addEventListener("click", function () {
 				this.closest(".card").remove();
 			});
 
-		// Inyecta el nuevo HTML en el contenedor de productos
+		
 		document.getElementById("productos").appendChild(nuevoProducto);
 
-		// Restablece el formulario después de agregar el producto
+		
 		document.getElementById("productForm").reset();
 	});
 
-// Maneja el clic en el botón de limpiar
+
 document.getElementById("reset-btn").addEventListener("click", function () {
 	document.getElementById("productForm").reset();
 });
